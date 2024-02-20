@@ -1,0 +1,14 @@
+version: '3'
+services:
+  fsgui-django:
+    build: .
+    container_name: fsgui-django
+    ports:
+      - "8024:8024"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: bash -c "python manage.py runserver 0.0.0.0:8024" 
+
+
