@@ -194,8 +194,8 @@ su user
 cd ../examples/compose
 # compiler l'image docker de fsgui
 docker build ../../fnm-fsgui/. 
-# Lancer les conteneurs
-docker compose up 
+# Lancer les conteneurs en mode détaché
+docker compose up -d
 ````
 
 #### configurations fsgui
