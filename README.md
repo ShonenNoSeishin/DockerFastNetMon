@@ -143,6 +143,8 @@ sudo fcli set main web_api_port 10007 # ou un autre port
 sudo fcli set main web_api_host <votre_ip> 
 # Commit les changements dans la DB Mongo (créée à l'installation)
 sudo fcli commit
+# Relancer le service API
+sudo systemctl restart fastnetmon_web_api
 ````
 attention, si vous mettez 127.0.0.1 au lieu de votre IP, vous risquez de ne pas savoir joindre l'API via docker et donc ne pas savoir interagir via la WebUI
 
