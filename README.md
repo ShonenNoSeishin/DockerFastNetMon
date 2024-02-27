@@ -168,10 +168,10 @@ cp example.env .env
 # --> modifier les valeurs pour que ça corresponde avec les vôtres 
 ````
 
-Pour la suite il faut avoir installé docker et docker-compose :
+Pour la suite il faut avoir installé docker :
 
 ````bash
-sudo apt install docker docker.io docker-compose -y
+sudo apt install docker docker.io -y
 ```` 
 mais aussi "docker compose" (sans tirets), testez si vous l'avez avec :
 
@@ -195,7 +195,7 @@ cd ../examples/compose
 # compiler l'image docker de fsgui
 docker build ../../fnm-fsgui/. 
 # Lancer les conteneurs
-docker-compose up 
+docker compose up 
 ````
 
 #### configurations fsgui
