@@ -168,12 +168,12 @@ cp example.env .env
 # --> modifier les valeurs pour que ça corresponde avec les vôtres 
 ````
 
-Pour la suite il faut avoir installé docker :
+Pour la suite il faut avoir installé docker et docker-compose :
 
 ````bash
-sudo apt install docker docker.io -y
+sudo apt install docker docker.io docker-compose -y
 ```` 
-et "docker compose" (sans tirets), testez si vous l'avez avec :
+mais aussi "docker compose" (sans tirets), testez si vous l'avez avec :
 
 ````bash
 docker compose version
